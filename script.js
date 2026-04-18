@@ -413,5 +413,32 @@ function highlightActiveNav() {
   
   sections.forEach(function(section) {
     observer.observe(section);
+
+     
+         // ============================================
+// نافذة الصور المنبثقة للمشاريع
+// ============================================
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeBtn = document.querySelector('.modal-close');
+const projectCards = document.querySelectorAll('.project-grid-card');
+
+projectCards.forEach(card => {
+  card.addEventListener('click', function() {
+    const imageUrl = this.getAttribute('data-image');
+    modalImg.src = imageUrl;
+    modal.classList.add('show');
+  });
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.classList.remove('show');
+});
+
+modal.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+  }
+});
   });
 }
