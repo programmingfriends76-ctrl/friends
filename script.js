@@ -441,3 +441,33 @@ modal.addEventListener('click', function(e) {
 });
   });
 }
+// --- عداد المربع الجديد (إضافة المشروع الرابع) ---
+const murabbaDate = new Date("December 31, 2030 23:59:59").getTime();
+
+const murabbaTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const diff = murabbaDate - now;
+
+    // حساب الأيام والساعات والدقائق والثواني
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+    // عرض النتيجة في العناصر التي أضفناها في HTML
+    const daysEl = document.getElementById("murabba-days");
+    const hoursEl = document.getElementById("murabba-hours");
+    const minsEl = document.getElementById("murabba-mins");
+    const secsEl = document.getElementById("murabba-secs");
+
+    if (daysEl) daysEl.innerText = d;
+    if (hoursEl) hoursEl.innerText = h;
+    if (minsEl) minsEl.innerText = m;
+    if (secsEl) secsEl.innerText = s;
+
+    // إذا انتهى الوقت
+    if (diff < 0) {
+        clearInterval(murabbaTimer);
+        if (daysEl) daysEl.parentElement.parentElement.innerHTML = "<h3>تم الافتتاح!</h3>";
+    }
+}, 1000);
