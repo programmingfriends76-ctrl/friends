@@ -471,3 +471,15 @@ const murabbaTimer = setInterval(function() {
         if (daysEl) daysEl.parentElement.parentElement.innerHTML = "<h3>تم الافتتاح!</h3>";
     }
 }, 1000);
+
+/* ============================================
+   إصلاح تشغيل الفيديو في Safari
+   ============================================ */
+var bgVideo = document.getElementById('bg-video');
+if (bgVideo) {
+  bgVideo.play().catch(function() {
+    document.addEventListener('click', function() { bgVideo.play(); }, { once: true });
+    document.addEventListener('touchstart', function() { bgVideo.play(); }, { once: true });
+    document.addEventListener('scroll', function() { bgVideo.play(); }, { once: true });
+  });
+}
