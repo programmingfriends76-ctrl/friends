@@ -381,24 +381,32 @@ ul { list-style: none; }
   top: -150px; left: -150px;
 }
 #bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* لجعله خلف المحتوى */
+    overflow: hidden;
+    object-fit: cover; /* لضمان تغطية الشاشة دون تغيير أبعاد الفيديو */
 }
-/* طبقة تعتيم فوق الفيديو لجعل النص واضح */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+
+/* لتغطية الشاشة في حال كان الفيديو داخل حاوية */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* لضمان ظهور المحتوى فوق الفيديو */
+    color: white;
+    text-align: center;
+    margin-top: 20%;
 }
 .deco-circle--2 {
   width: 200px; height: 200px;
