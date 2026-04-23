@@ -472,9 +472,7 @@ const murabbaTimer = setInterval(function() {
     }
 }, 1000);
 
-/* ============================================
-   إصلاح تشغيل الفيديو في Safari
-   ============================================ */
+/* إصلاح تشغيل الفيديو في Safari */
 var bgVideo = document.getElementById('bg-video');
 if (bgVideo) {
   bgVideo.play().catch(function() {
