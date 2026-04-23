@@ -24,26 +24,26 @@
    :root = المتغيرات متاحة لكل الصفحة
    ============================================ */
 :root {
-  /* الألوان — درجات الأخضر #339966 */
-  --gold: #339966;          /* الأخضر الرئيسي */
-  --gold-light: #44bb88;    /* أخضر فاتح للتأثيرات */
-  --gold-dark: #226644;     /* أخضر داكن */
-  --night: #071a10;         /* خلفية داكنة بلون أخضر عميق */
-  --night-2: #0d2618;       /* خلفية الشريط الجانبي */
-  --night-3: #122e1e;       /* خلفية البطاقات والأقسام */
-  --text-main: #e8f5ee;     /* لون النص الرئيسي (فاتح) */
-  --text-muted: #7aaa8e;    /* لون النص الثانوي */
-  --border: rgba(51, 153, 102, 0.25); /* حدود شفافة خضراء */
-  --sage-light: #5cb88a;    /* متوافق مع متغير Frost الأصلي */
-  --sage-dark: #2d7a52;     /* متوافق مع متغير Frost الأصلي */
-
-  /* الخطوط */
-  --font-heading: 'Cairo', sans-serif;  /* خط العناوين */
-  --font-body: 'Tajawal', sans-serif;   /* خط النص العادي */
-
-  /* المقاسات */
-  --sidebar-width: 260px;  /* عرض الشريط الجانبي */
-  --radius: 12px;           /* استدارة الزوايا */
+  --gold: #2E8B57;
+  --gold-light: #3DA870;
+  --gold-dark: #236B42;
+  
+  --green-deep: #1F7A8C;
+  --green-light: #3A9BAB;
+  
+  --night: #EFF7F5;
+  --night-2: #F8FCFB;
+  --night-3: #FFFFFF;
+  
+  --text-main: #1E4D4F;
+  --text-muted: #6B9A96;
+  
+  --border: rgba(46, 139, 87, 0.12);
+  
+  --font-heading: 'Cairo', sans-serif;
+  --font-body: 'Tajawal', sans-serif;
+  --sidebar-width: 260px;
+  --radius: 12px;
 }
 
 
@@ -1229,3 +1229,84 @@ ul { list-style: none; }
   .countdown__num { font-size: 2rem; }
   .countdown__timer { gap: 1rem; }
 }
+
+/* ============================================
+   تعديل على الوان الشريط الجانبيه جنى
+   ============================================ */
+.sidebar {
+  background: #0D2C28;
+  border-left: none;
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar__logo {
+  color: #EFF7F5;
+}
+
+.sidebar__logo span {
+  color: #2E8B57;
+  text-shadow: 0 0 10px rgba(46, 139, 87, 0.3);
+}
+
+.sidebar__tagline {
+  color: #3DA870;
+  opacity: 0.8;
+}
+
+.sidebar__brand {
+  border-bottom: 1px solid rgba(46, 139, 87, 0.25);
+  padding-bottom: 1.5rem;
+}
+
+.sidebar__nav a {
+  color: #B0D4CE;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  border-radius: 12px;
+}
+
+.sidebar__nav a:hover,
+.sidebar__nav a.active {
+  background: rgba(46, 139, 87, 0.15);
+  color: #3DA870;
+  border-right: 2px solid #2E8B57;
+  padding-right: 1rem;
+}
+
+
+/* لمسات زمرد جدة */
+.btn--primary {
+  background: #2E8B57;
+}
+
+.btn--primary:hover {
+  background: #3DA870;
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.3);
+}
+
+.seasonal-tab.is-active {
+  background: #2E8B57;
+  border-color: #2E8B57;
+  color: white;
+}
+
+.seasonal-tab:hover:not(.is-active) {
+  border-color: #2E8B57;
+  color: #2E8B57;
+}
+
+.seasonal-panel__badge {
+  background: #2E8B57;
+}
+
+.countdown__num {
+  color: #2E8B57;
+}
+
+.footer__brand span {
+  color: #2E8B57;
+}
+
+
+
+
