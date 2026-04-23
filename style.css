@@ -392,15 +392,6 @@ ul { list-style: none; }
     overflow: hidden;
     object-fit: cover; /* لضمان تغطية الشاشة دون تغيير أبعاد الفيديو */
 }
-
-/* لتغطية الشاشة في حال كان الفيديو داخل حاوية */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
 .content {
     position: relative;
     z-index: 1; /* لضمان ظهور المحتوى فوق الفيديو */
