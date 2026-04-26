@@ -1307,6 +1307,18 @@ ul { list-style: none; }
   color: #2E8B57;
 }
 
+.logo-img{
+   max-width:150px;
+   width:85%;
+   height:auto;
+   display:block;
+   margin:15px auto;
+   /* لدمج الشعار وإخفاء المربعات الخلفية */
+   mix-blend-mode:multiply;
+
+/* لمسة جمالية لإبراز الشعار */
+   filter:drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
 
 
 
