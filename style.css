@@ -1307,17 +1307,25 @@ ul { list-style: none; }
   color: #2E8B57;
 }
 
-.logo-img{
-   max-width:150px;
-   width:85%;
-   height:auto;
-   display:block;
-   margin:15px auto;
-   /* لدمج الشعار وإخفاء المربعات الخلفية */
-
-/* لمسة جمالية لإبراز الشعار */
-   filter:drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+/*تنسيق شعار مشروع طموح */
+.sidebar__logo-img{
+   width:140px;      /* الحجم المناسب للقائمة الجانبية*/
+   height:auto;      /* للمحافظة على ابعاد الشعار */
+   display:block;     /* ليظهر كعنصر مستقل */
+   margin:20px auto;      /* ليتوسط القائمة ويترك مسافه من الاعلى والاسفل  */
+ /*هذا السطر يجعل الشعار بارز وفخم فوق الخلفيه الداكنه*/
+   filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.4));
+   */حركة ناعمة عند ظهور الشعار */
+   transition:transform 0.3s ease;
+}
+*/حركة بسيطه عند مرور الماوس على الشعار */
+.sidebar__logo-img:hover{
+   transform: scale(1.05);
 }
 
+   
+   
+
+   
 
 
