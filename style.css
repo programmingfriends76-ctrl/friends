@@ -1294,7 +1294,13 @@ ul { list-style: none; }
   border-color: #2E8B57;
   color: #2E8B57;
 }
-
+.sidebar{
+   padding-top:20px !important;
+}
+.sidebar__logo{
+   padding:0 !important;
+   margin-bottom:0 !important;
+}
 .seasonal-panel__badge {
   background: #2E8B57;
 }
