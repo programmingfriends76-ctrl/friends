@@ -308,7 +308,9 @@ ul { list-style: none; }
   z-index: 2; /* فوق العناصر الزخرفية */
   max-width: 600px;
 }
-
+.hero__content p {
+   color:#222222;
+}
 /* الشارة الصغيرة (رؤية 2030) */
 .hero__badge {
   display: inline-block;
