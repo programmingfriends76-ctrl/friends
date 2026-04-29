@@ -1331,7 +1331,9 @@ ul { list-style: none; }
 .sidebar__logo-img:hover{
    transform: scale(1.05);
 }
-
+.hero__content p {
+   color:#ffffff !important;
+}
    
    
 
