@@ -1335,44 +1335,4 @@ ul { list-style: none; }
    color:#ffffff !important;
 }
    
-  /* === زر الصوت العائم === */
-#audioPlayer {
-  position: fixed;
-  bottom: 2rem;
-  left: 2rem;
-  z-index: 9999;
-}
-
-#audioBtn {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 2px solid var(--gold);
-  background: var(--night-3);
-  color: var(--gold);
-  font-size: 1.4rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-#audioBtn:hover {
-  transform: scale(1.1);
-  background: rgba(201,168,76,0.15);
-}
-
-#audioBtn.playing {
-  animation: pulse-audio 2s infinite;
-}
-
-@keyframes pulse-audio {
-  0%, 100% { box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
-  50% { box-shadow: 0 4px 25px rgba(201,168,76,0.4); }
-}  
-
-   
-
-
+  
