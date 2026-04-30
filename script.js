@@ -480,4 +480,4 @@ if (bgVideo) {
     document.addEventListener('touchstart', function() { bgVideo.play(); }, { once: true });
     document.addEventListener('scroll', function() { bgVideo.play(); }, { once: true });
   });
-   
+}
