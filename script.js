@@ -481,3 +481,19 @@ if (bgVideo) {
     document.addEventListener('scroll', function() { bgVideo.play(); }, { once: true });
   });
 }
+
+// === مشغّل الصوت ===
+function toggleAudio() {
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('audioBtn');
+
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = '🔊';
+    btn.classList.add('playing');
+  } else {
+    audio.pause();
+    btn.textContent = '🎵';
+    btn.classList.remove('playing');
+  }
+}
