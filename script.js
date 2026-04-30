@@ -440,8 +440,7 @@ modal.addEventListener('click', function(e) {
     modal.classList.remove('show');
   }
 });
-  });
-}
+
 // --- عداد المربع الجديد (إضافة المشروع الرابع) ---
 const murabbaDate = new Date("December 31, 2030 23:59:59").getTime();
 
