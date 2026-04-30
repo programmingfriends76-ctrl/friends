@@ -552,6 +552,17 @@
 
   </main>
 
+
+<!-- زر الصوت العائم -->
+<div id="audioPlayer">
+  <audio id="bgAudio" loop>
+   <source src="background.mp3" type="audio/mpeg">
+  </audio>
+  <button id="audioBtn" onclick="toggleAudio()" title="تشغيل / إيقاف الموسيقى">
+    🎵
+  </button>
+</div>
+  
   <!-- ربط ملف JavaScript في نهاية الصفحة -->
   <!-- لماذا في النهاية؟ لأن HTML يتحمّل من الأعلى للأسفل، 
        ووضع JS في النهاية يضمن تحميل كل عناصر الصفحة أولاً -->
