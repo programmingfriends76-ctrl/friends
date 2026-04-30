@@ -413,7 +413,8 @@ function highlightActiveNav() {
   
   sections.forEach(function(section) {
     observer.observe(section);
-
+});
+}
     // ============================================
 // نافذة الصور المنبثقة للمشاريع
 // ============================================
